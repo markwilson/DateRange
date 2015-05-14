@@ -8,7 +8,7 @@
 use MarkWilson\DateRange\DateRange;
 use MarkWilson\DateRange\DateRangeGroup;
 
-$dateRange = DateRange::createFromStrings('today', '+1 week');
+$dateRange = DateRange::createFromStrings('today', 'P1W');
 $dateRange->covers(new DateTime('tomorrow'));  // true
 $dateRange->covers(new DateTime('yesterday')); // false
 
